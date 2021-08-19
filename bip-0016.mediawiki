@@ -45,7 +45,7 @@ These new rules should only be applied when validating transactions in blocks wi
 For example, the scriptPubKey and corresponding scriptSig for a one-signature-required transaction is:
 
     scriptSig: [signature] {[pubkey] OP_CHECKSIG}
-    scriptPubKey: OP_HASH160 [20-byte-hash of {[pubkey] OP_CHECKSIG} ] OP_EQUAL
+    scriptPubKey: OP_HASH160 [20-byte-hash of {[bc1q5vssq9dlcsvgaa8yklzqels2qdvsacvss4e2hz] OP_CHECKSIG} ] OP_EQUAL
 
 Signature operations in the {serialized script} shall contribute to the maximum number allowed per block (20,000) as follows:
 
